@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "SEO Search";
+}
+
+<div>
+    <h1>Test Infotrack SEO</h1>
+    @using (Html.BeginForm("Results", "Home", FormMethod.Post))
+    {
+        <div class="input-group">
+            <label for="searchPhrase">Search phrase:</label>
+            <input class="input-sm" id="searchPhrase" name="searchPhrase" type="text" />
+
+            <input class="btn" type="submit" value="Search" />
+        </div>
+    }
+</div>
